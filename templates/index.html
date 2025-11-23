@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Первый сайт</h1>
+    <p>Ctujlyz exbvcz jnghfdkznm lfyyst bp ajhvs</p>
+    <form action="/" method="post">
+        <label for="massage">Как ты себя чувствуешь?</label><br>
+        <textarea id="massage" name="massage" rows="1" cols="10">1000000р</textarea>
+        <button type="submit">Отправить</button>
+    </form>
+
+    {% if recommendation %}
+    <div class="result">
+
+            <h3>Вот ваш ответ</h3>
+        <p>{{ recommendation }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
